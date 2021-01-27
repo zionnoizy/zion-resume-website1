@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="UTF=-8">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="js/progress_bar.js" defer></script>
+    <script src="js/message_box.js" defer></script>
+    <title> Zion Portfolio </title>
+</head>
+
+<body>
+
+    <!--navbar-->
+    <header>
+        <h1>Zion Wong<i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:30px;"></i></a> </h1>
+
+
+        <nav>
+            <ul class="nav_links">
+                <li class="nav-item active"><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">My work</a></li>
+                <li><a href="#profile">Profile Photo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--about me-->
+    <div class="about_me">
+        <h1>About Me</h1>
+            <p class="abt_me_txt">Welcome to Zion's webpage. Hopefully this website will get to know me better.
+I am a software engineer currently living in London. My favorite subject is mathematics since primary school. I discovered interesting to implement programs to reflect the images on the computer monitor. After studying computer science, I discovered programming not just related images, but also algorithms and data transfers. I like to read the data flow and design from a different platform. It heightened my curiosity and passion about software engineering.
+I have a professional background in developing mobile apps in the United States. I arrived in the United Kingdom in 2020 and I would like to obtain a job opportunity related to computer science in the United Kingdom. My dream is to become an expert programmer. In my leisure time, I like to discover old console games and skiing.  </p>
+    </div>
+
+    <img src="images/1869.jpg" class="img_face1" style="width:600px;height:500px ;">
+    <img src="images/020.jpg" class="img_face1" style="width:600px;height:500px ;">
+
+
+
+    <!--experience-->
+    <div class="row">
+        <div class="column">
+            <h1 class="text_center">Experience</h1>
+            <div class="exp">
+                2020 - Android Developer<br/>
+                I worked as an Android software developer. This is a start-up company locked in Ohio State. I'm responsible for creating a user interface, configuring a phone connection and a five-star evaluation system from Stretch, and managing messages from Firebase. Regular meetings per week to discuss progress & planning.
+                <b>Company</b> - Resolve TOK Inc.<br/>
+                <b>Duration</b> - March 2020 - July 2020<br/>
+            </div>
+        </div>
+
+        <!--skills-->
+        <div class="column">
+            <h1 class="text_center">Key Skills</h1>
+            <div class="skills-bar">
+                C++
+                <div class="progress-bar" style="--width: 95" data-label="95%"></div>
+                Python
+                <div class="progress-bar" style="--width: 80" data-label="80%"></div>
+                Java
+                <div class="progress-bar" style="--width: 75" data-label="75%"></div>
+                Bash / Shell
+                <div class="progress-bar" style="--width: 80" data-label="80%"></div>
+                MySQL/MariaDB
+                <div class="progress-bar" style="--width: 65" data-label="65%"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--https://www.youtube.com/watch?v=MBaw_6cPmAw-->
+    <!--https://www.youtube.com/watch?v=fNcJuPIZ2WE&pbjreload=10-->
+    <h1>contact</h1>
+    <div class="container" id="contact">
+
+        <button data-openmessagebox-target="#mb">Leave a Message to Me</button>
+
+        <div class="message_box" id="mb">
+            <p class="mb_title"> Get in touch! Let me know how my webside did, or and questions or concerns.</p>
+            <button data-close-button class="mb_close">&times;</button>
+            <div class="mb_body">
+                <form method="POST" action="send_form_email.php">
+                    <input type="text" name="mb_fullname" placeholder="Full Name"> <br/>
+                    <input type="email" name="mb_email" placeholder="youremail@example.com"> <br/>
+                    <textarea name="mb_message" cols="30" rows="10" style="color:white;"></textarea> <br/>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+
+    </div>
+
+
+    <footer>
+        <hr>
+        <p> 2020 Copyright. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
