@@ -17,33 +17,57 @@
     <header>
         <h1>Zion Wong<i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:30px;"></i></a> </h1>
 
-
         <nav>
             <ul class="nav_links">
                 <li class="nav-item active"><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#work">My work</a></li>
-                <li><a href="#profile">Profile Photo</a></li>
+                <li><a href="profile/profile.html">Profile Photo</a></li>
             </ul>
         </nav>
     </header>
+    <br>
 
     <!--about me-->
     <div class="about_me">
         <h1>About Me</h1>
             <p class="abt_me_txt">Welcome to Zion's webpage. Hopefully this website will get to know me better.
-I am a software engineer currently living in London. My favorite subject is mathematics since primary school. I discovered interesting to implement programs to reflect the images on the computer monitor. After studying computer science, I discovered programming not just related images, but also algorithms and data transfers. I like to read the data flow and design from a different platform. It heightened my curiosity and passion about software engineering.
-I have a professional background in developing mobile apps in the United States. I arrived in the United Kingdom in 2020 and I would like to obtain a job opportunity related to computer science in the United Kingdom. My dream is to become an expert programmer. In my leisure time, I like to discover old console games and skiing.  </p>
+        I am a software engineer currently living in London. My favorite subject is mathematics since primary school. I discovered interesting to implement programs to reflect the images on the computer monitor. After studying computer science, I discovered programming not just related images, but also algorithms and data transfers. I like to read the data flow and design from a different platform. It heightened my curiosity and passion about software engineering.
+        I have a professional background in developing mobile apps in the United States. I arrived in the United Kingdom in 2020 and I would like to obtain a job opportunity related to computer science in the United Kingdom. My dream is to become an expert programmer. In my leisure time, I like to discover old console games and skiing.  </p>
     </div>
 
-    <img src="images/1869.jpg" class="img_face1" style="width:600px;height:500px ;">
-    <img src="images/020.jpg" class="img_face1" style="width:600px;height:500px ;">
 
+    <!--picture-->
+    <div class="column3">
+        <img src="images/1869.jpg" class="img_face1" style="width:400px;height:300px ;">
+    </div>
+
+    <div class="column3">
+        <img src="images/020.jpg" class="img_face1" style="width:400px;height:300px ;">
+    </div>
+
+    <div class="column3">
+        <img src="images/2928.jpg" class="img_face1" style="width:400px;height:300px ;">
+    </div>
+    <br>
+    <br>
+
+
+    <!--Passion-->
+    <h1>Passion</h1>
+    <p class="abt_me_txt">
+        I love computer science because we have engaged it every day in this generation. Understanding computing not only responds to my curiosity about algorithms, but also to my daily tasks, from calculation to data organization. When I was a child, I thought that inserting an image into the web forum is interesting because it reflects a pixel inside the monitor screen. After I learned just using the image tag and the image will reflect on the screen,
+        the “magic” of img tag always stays in my memory. This is how I like to prolong my ‘insert picture' memory of my future dream.
+    </p>
+    <br>
+    <br>
 
 
     <!--experience-->
-    <div class="row">
-        <div class="column">
+
+    <div class="column">
+
+        <div class="waku">
             <h1 class="text_center">Experience</h1>
             <div class="exp">
                 2020 - Android Developer<br/>
@@ -52,7 +76,7 @@ I have a professional background in developing mobile apps in the United States.
                 <b>Duration</b> - March 2020 - July 2020<br/>
             </div>
         </div>
-
+    </div>
         <!--skills-->
         <div class="column">
             <h1 class="text_center">Key Skills</h1>
@@ -69,7 +93,8 @@ I have a professional background in developing mobile apps in the United States.
                 <div class="progress-bar" style="--width: 65" data-label="65%"></div>
             </div>
         </div>
-    </div>
+
+
 
 
     <!--https://www.youtube.com/watch?v=MBaw_6cPmAw-->
@@ -87,9 +112,11 @@ I have a professional background in developing mobile apps in the United States.
                     <input type="text" name="mb_fullname" placeholder="Full Name"> <br/>
                     <input type="email" name="mb_email" placeholder="youremail@example.com"> <br/>
                     <textarea name="mb_message" cols="30" rows="10" style="color:white;"></textarea> <br/>
-                    <input type="submit">
+                    <input type="submit" name="send_btn">
                 </form>
             </div>
+
+
         </div>
 
         <div id="overlay"></div>

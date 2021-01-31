@@ -30,16 +30,34 @@ a{
 /*two column*/
 .column{
     float: left;
-    width: 50%;
+    width: 45%;
     padding: 10px;
 }
 
-/*experience*/
+/*three column three pictures*/
+.column3{
+    float: left;
+    width: 30%;
+    padding: 5px;
+    height: 300px;
+    text-align: center;
+    display: block;
+}
+
 /*experience*/
 .exp{
     line-height: 200%;
 }
 
+.waku{
+  -webkit-transition: all 1s;
+  -webkit-transform: translate(0, 0);
+}
+
+.waku move{
+    -webkit-transform: translate(0, 50px);
+    opacity: 0;
+}
 
 /* progress bar
 .skills-bar, .skills-bar::before, skills-bar::after{
@@ -68,31 +86,6 @@ a{
     top: .5em;
     bottom: .5em;
     width: calc(var(--width, 0)  * 1% );
-    min-width: 2rem;
-    max-width: calc(100% - 1em);
-    background-color: #069;
-    border-radius: 1em;
-}
-
-/*1black background*/
-.progress-bar1{
-    background-color: #111;
-    position: relative;
-    width: 500px;
-    height: 3em;
-    border-radius: 1.5em;
-    color: white;
-}
-
-.progress-bar1::before{
-    content: attr(data-label);
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: .5em;
-    top: .5em;
-    bottom: .5em;
-    width: calc(var(--width, 0) * 1%);
     min-width: 2rem;
     max-width: calc(100% - 1em);
     background-color: #069;
