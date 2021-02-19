@@ -1,10 +1,10 @@
 <?php
-
+require_once ('send_form_email.php'); // OK
 print "Script"
 
 if(isset($_POST['send_btn']){
 
-    $to_my_email = "zionn951@gmail.com";
+    $to_my_email = "test@gmail.com";
     $to_my_email_title = "sent from Zion Web:";
 
     if(!isset($_POST['mb_fullname']) ||
@@ -28,13 +28,20 @@ if(isset($_POST['send_btn']){
     $headers = "FROM:TEST@TEST.COM";
 
     $time = time();
+    bool flag = mail($to_my_email, $email_subject, $email_msg, $headers);
 
-    if(mail($to_my_email, $email_subject, $email_msg, $headers)){
+    if(flag){
         echo 'Email has sent successfully.';
     }else{
         echo 'Email sending failed.';
     }
 
     print "Run $time";
+}
+
+else{
+    error_reporting(-1);
+    ini_set('display_errors', 'On');
+    set_error_handler("var_dump");
 }
 ?>

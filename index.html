@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <script src="js/progress_bar.js" defer></script>
     <script src="js/message_box.js" defer></script>
+    <script> document.createElement("stack"); </script>
     <title> Zion Portfolio </title>
 </head>
 
@@ -19,10 +20,10 @@
 
         <nav>
             <ul class="nav_links">
-                <li class="nav-item active"><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">My work</a></li>
-                <li><a href="profile/profile.html">Profile Photo</a></li>
+                <!--<li class="nav-item active"><a href="#about">About Me</a></li>-->
+                <!--<li><a href="#skills">Skills</a></li>-->
+                <!--<li><a href="#work">My work</a></li>-->
+                <li> <a href="profile/profile.html"> <nav_color>   Profile Photo  </nav_color> </a> </li>
             </ul>
         </nav>
     </header>
@@ -36,6 +37,7 @@
         I have a professional background in developing mobile apps in the United States. I arrived in the United Kingdom in 2020 and I would like to obtain a job opportunity related to computer science in the United Kingdom. My dream is to become an expert programmer. In my leisure time, I like to discover old console games and skiing.  </p>
     </div>
 
+    <br>
 
     <!--picture-->
     <div class="column3">
@@ -48,30 +50,33 @@
 
     <div class="column3">
         <img src="images/2928.jpg" class="img_face1" style="width:400px;height:300px ;">
+
     </div>
-    <br>
-    <br>
+
+     <br>
 
 
     <!--Passion-->
-    <h1>Passion</h1>
-    <p class="abt_me_txt">
-        I love computer science because we have engaged it every day in this generation. Understanding computing not only responds to my curiosity about algorithms, but also to my daily tasks, from calculation to data organization. When I was a child, I thought that inserting an image into the web forum is interesting because it reflects a pixel inside the monitor screen. After I learned just using the image tag and the image will reflect on the screen,
-        the “magic” of img tag always stays in my memory. This is how I like to prolong my ‘insert picture' memory of my future dream.
-    </p>
+    <div class="about_me">
+        <h1>Passion</h1>
+        <p class="abt_me_txt">
+            I love computer science because we have engaged it every day in this generation. Understanding computing not only responds to my curiosity about algorithms, but also to my daily tasks, from calculation to data organization. When I was a child, I thought that inserting an image into the web forum is interesting because it reflects a pixel inside the monitor screen. After I learned just using the image tag and the image will reflect on the screen,
+            the &#34;magic&#34; of img tag always stays in my memory. This is how I like to prolong my 'insert picture' memory of my future dream.
+        </p>
+    </div>
+
     <br>
     <br>
 
 
     <!--experience-->
-
     <div class="column">
 
         <div class="waku">
             <h1 class="text_center">Experience</h1>
             <div class="exp">
                 2020 - Android Developer<br/>
-                I worked as an Android software developer. This is a start-up company locked in Ohio State. I'm responsible for creating a user interface, configuring a phone connection and a five-star evaluation system from Stretch, and managing messages from Firebase. Regular meetings per week to discuss progress & planning.
+                I worked as an Android software developer. This is a start-up company locked in Ohio State. I'm responsible for creating a user interface, configuring a phone connection and a five-star evaluation system from Stretch, and managing messages from Firebase. Regular meetings per week to discuss progress & planning. <br/>
                 <b>Company</b> - Resolve TOK Inc.<br/>
                 <b>Duration</b> - March 2020 - July 2020<br/>
             </div>
@@ -96,31 +101,33 @@
 
 
 
+    <div class="about_me">
+        <!--https://www.youtube.com/watch?v=MBaw_6cPmAw-->
+        <!--https://www.youtube.com/watch?v=fNcJuPIZ2WE&pbjreload=10-->
+        <h1>contact</h1>
+        <div class="container" id="contact">
 
-    <!--https://www.youtube.com/watch?v=MBaw_6cPmAw-->
-    <!--https://www.youtube.com/watch?v=fNcJuPIZ2WE&pbjreload=10-->
-    <h1>contact</h1>
-    <div class="container" id="contact">
+            <button data-openmessagebox-target="#mb"> <p style="color:white;"> Send an E-mail to Me </p></button>
 
-        <button data-openmessagebox-target="#mb">Leave a Message to Me</button>
+            <div class="message_box" id="mb">
+                <p class="mb_title"> Get in touch! Let me know how my webside did, questions or concerns.</p>
+                <button data-close-button class="mb_close" style="color:white; float:right;" >&times;</button>
+                <div class="mb_body">
+                    <form method="POST" action="send_form_email.php">
+                        <input type="text" name="mb_fullname" style="color:white;" placeholder="full name"> <br/>
 
-        <div class="message_box" id="mb">
-            <p class="mb_title"> Get in touch! Let me know how my webside did, or and questions or concerns.</p>
-            <button data-close-button class="mb_close">&times;</button>
-            <div class="mb_body">
-                <form method="POST" action="send_form_email.php">
-                    <input type="text" name="mb_fullname" placeholder="Full Name"> <br/>
-                    <input type="email" name="mb_email" placeholder="youremail@example.com"> <br/>
-                    <textarea name="mb_message" cols="30" rows="10" style="color:white;"></textarea> <br/>
-                    <input type="submit" name="send_btn">
-                </form>
+                        <input type="email" name="mb_email" style="color:white;" placeholder="your email"> <br/>
+
+                        <textarea name="mb_message" cols="30" rows="10" style="color:white;" placeholder="message"></textarea> <br/>
+
+                        <input type="submit" name="send_btn" style="color:white;">
+                    </form>
+                </div>
             </div>
 
+            <div id="overlay"></div>
 
         </div>
-
-        <div id="overlay"></div>
-
     </div>
 
 
